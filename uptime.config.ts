@@ -41,10 +41,12 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://ha.forch.me',
       expectedCodes: [200],
       timeout: 10000,
-        headers: {
+      headers: 
+      {
         'User-Agent': 'Uptimeflare',
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIwNjAxNTU3MjI1YWE0NTg1OGUzOTRiMmFkODcwZWUwZCIsImlhdCI6MTc2NjI0ODI1OCwiZXhwIjoyMDgxNjA4MjU4fQ.B2F62mWS_FxicUbFfPjyE6dpslvP3XiNkf-0oslQbgo',
-    },
+      }
+     },
     {
       id: 'immich',
       name: 'Immich',

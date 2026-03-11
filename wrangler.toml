@@ -2,6 +2,7 @@ name = "uptimeflare"
 compatibility_date = "2025-04-02"
 compatibility_flags = [ "nodejs_compat" ]
 
-[[kv_namespaces]]
-binding = "UPTIMEFLARE_STATE"
-id = "3560cce826a645ee8d5d78c30f5e3d0a"
+[[d1_databases]]
+binding = "UPTIMEFLARE_D1"
+database_name = "uptimeflare_d1"
+database_id = "daea9a43-de80-413d-840e-474d653e1095"

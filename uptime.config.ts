@@ -2,9 +2,6 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   title: "Forch.me Status",
-  links: [
-    { link: 'https://jellyfin.forch.me', label: 'Jellyfin' },
-  ],
 }
 
 const workerConfig: WorkerConfig = {
@@ -22,7 +19,7 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'seerr',
-      name: 'seerr',
+      name: 'Seerr',
       method: 'GET',
       target: 'https://request.forch.me',
       checkProxy: 'worker://weur',
@@ -32,17 +29,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'home_assistant',
-      name: 'Home Assistant',
-      method: 'GET',
-      target: 'https://ha.forch.me',
-      checkProxy: 'worker://weur',
-      tooltip: 'Home Assistant',
-      statusPageLink: 'https://ha.forch.me',
-      expectedCodes: [200, 401, 302],
-      timeout: 10000
-    },
-    {
       id: 'immich',
       name: 'Immich',
       method: 'GET',
@@ -50,28 +36,6 @@ const workerConfig: WorkerConfig = {
       checkProxy: 'worker://weur',
       tooltip: 'Photo Library',
       statusPageLink: 'https://immich.forch.me',
-      expectedCodes: [200],
-      timeout: 10000,
-    },
-    {
-      id: 'portainer',
-      name: 'Portainer',
-      method: 'GET',
-      target: 'https://portainer.forch.me',
-      checkProxy: 'worker://weur',
-      tooltip: 'Docker Management',
-      statusPageLink: 'https://portainer.forch.me',
-      expectedCodes: [200, 302],
-      timeout: 10000,
-    },
-    {
-      id: 'reitti',
-      name: 'Reitti',
-      method: 'GET',
-      target: 'https://reitti.forch.me',
-      checkProxy: 'worker://weur',
-      tooltip: 'Location Tracker',
-      statusPageLink: 'https://reitti.forch.me',
       expectedCodes: [200],
       timeout: 10000,
     },
